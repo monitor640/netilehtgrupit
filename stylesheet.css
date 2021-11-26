@@ -1,0 +1,41 @@
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: ivory;
+
+}
+body{
+  height: 100%;
+}
+div{
+
+}
+.kastikesed{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 8px;
+  background-color: rgba(255,255,240,0.2);
+  border-radius: 8px;
+  color:aliceblue;
+  margin:10px;
+}
+html{
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+}
+.parallax{
+  background-image: url("background.jpeg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+img{
+  margin: 10px;
+  margin-top: 12px;
+  border-radius: 5px;
+  object-fit: cover;
+  max-height: 300px;
+  max-width: auto;
+}
