@@ -18,6 +18,68 @@ div{
   color:aliceblue;
   margin:10px;
 }
+.main_konteiner {
+  margin: 10px;
+  background-color:rgba(255, 255, 240, 0.76);
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 190px 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 60px;
+  box-sizing: border-box;
+  column-gap: 50px;
+}
+.konteiner {
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px;
+  padding: 50px;
+}
+.konteiner div {
+  padding: 10px;
+  border: 2px solid rgb(82, 74, 74);
+  border-radius: 10px;
+  margin: 5%;
+  text-align: center;
+  height: 70px;
+  max-width: 400px;
+  background-color: ivory;
+}
+.retsepi_float { 
+  background-color:rgb(82, 74, 74);
+  font-size: 14px;
+  float: left;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3%;
+  border-radius: 25px;
+  width: 350px;
+  color: ivory;
+  margin-top: 10px;
+  margin-left: 25px;
+  grid-row-start: auto;
+  grid-row-end: span 2;
+  max-height: 600px;
+}
+.tava_tekst {
+  padding: 5px;
+  font-size: 20px;
+  color: ivory;
+}
+.tekst_box_1 {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  padding: 5px;
+  font-size: 20px;
+  grid-column-end: span 2;
+}
+.väike_pealkiri {
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color:rgb(136, 57, 57);
+}
 html{
   font-family: 'Montserrat', sans-serif;
   height: 100%;
