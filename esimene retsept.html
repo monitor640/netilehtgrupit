@@ -1,61 +1,90 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
 <style>
 body {
-    background-image: url("backround.jpg");
-    background-repeat: no-repeat;
+    background-image: url("cupcake1.jpg");
+    background-repeat: repeat;
+    background-attachment:fixed;
     background-size: 100%;
-    margin-top: 5cm;
-    margin-left: 8cm;
-    margin-right: 8cm;
+    margin: 0 auto;
     }
-.s1 { background-color: white;
-    font-size: 20px;
-    }
-h2 {font-size: 30px;
-
-}
+    .logo {
+        float: left;
+        border-radius: 20px;
+        height: 70px;
+        width: 70px;
+    } 
 </style>
-
+</head>
 <body>
-<div><h1 style="background-color: aquamarine; font-size: 40px;">Parim õhtusöök</h1>
+<div class="kastikesed" style="height: 60px;">
+    <h1 style="justify-content: left;">Tudengiretseptid</h1>
+    <button type="button" style="position: absolute; top: 40px;right: 40px;" >Pealehele</button>
 </div>
-<div class="s1">
+<div> 
+    <h1 style="font-size: 50px;font-style: italic; padding: 5%;">Ühe-minuti tassikook</h1>
+</div>
+<div class="main_konteiner">
+    <div class="retsepi_float">
+        <h2 class="väike_pealkiri" style = "font-size: 30px; text-align: center;">KOOSTISOSAD</h2>
+        <ul>
+            <li class = "tava_tekst" >3 spl jahu </li>
+            <li class = "tava_tekst">2 spl suhkurt</li>
+            <li class = "tava_tekst">2 spl kakao pulbrit</li>
+            <li class = "tava_tekst">1/4 tl küpsetuspulbrit</li>
+            <li class = "tava_tekst"> näputäis soola</li>
+            <li class = "tava_tekst">3 spl piima</li>
+            <li class = "tava_tekst">1/2 tl vanilli ekstrakti</li>
+            <li class = "tava_tekst">2 spl õli või sulatatud võid</li>
+            <li class = "tava_tekst">20g šokolaadi tükke</li>
+        </ul>
+    </div>
+    <div class = "konteiner" style="grid-column-start: 2; grid-column-end: span 2;">
+        <div class = "väike_pealkiri" style="font-size: 20px;">Ettevalmistus aeg 
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);">5 min</span>
+        </div>
+        <div class = "väike_pealkiri" style="font-size: 20px;"> Küpsetus aeg 
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);"> 1 min</span>
+        </div>
+        <div class = "väike_pealkiri" style="font-size: 20px;">Sobiv kogus
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);">1 - le</span>
+        </div>
+    </div>
+    <div class="tekst_box_1"style="grid-column-start: 2;grid-row-start: 2;" >
+        <h2 class="väike_pealkiri">Miks sa peaksid seda proovima valmistada</h2>
 
-<h2>Mida on vaja
-</h2>
-<img src="toit.jpg" align = "right" height="700" width="500">
-<ul>
-    <li>Sõpru</li>
-    <li>Süüa</li>
-    <li>mingid lihtsad mikrokas tehtavad</li>
-    <li>palju makarone</li>
-    <li>võibolla võiks küsida kellegilt, keda kursus teab</li>
-    <li>kui see nii lihtne tuleb, siis võiks juba memeda sellega</li>
-    <li>alkohol</li>
-</ul>
-</div>
-<div class="s1" margin = 3cm>
-<h2>
-    Valmistamine
-</h2>
-<p >Mingi randoomne jutt sellest, kuidas asju valmistama peaks. 1.	Leidke omale paariline
-    2.	Tudeng nr 1 loob omale uue repositooriumi (Tudeng nr 2 tuleb lisada kollaboraatoriks Settings -> manage access -> invite a collaborator)
-    3.	Tudeng nr 1 loob faili conflict.md ning kirjutab sinna sisusse paar rida teksti omal valikul. Peale loomist tuleb fail ka repositooriumisse üles panna.
-    4.	Tudeng nr 2 võtab kollaboraatoriks olemise kutse vastu (kutse tuleb meilile)
-    5.	Tudeng nr 2 kloonib omale selle sama loodud repositooriumi.
-    6.	Mõlemad tudengid teevad omale uue haru.
-    Uus haru nimetatakse üldiselt selle funktsionaalsuse järgi, millega seal tegeletakse, aga hetkel võite panna harudele enda nimed. git checkout -b <sinu-haru-nimi>
-    Loe lisaks: https://www.git-tower.com/learn/git/faq/create-branch/
-    7.	Mõlemad tudengid laevad oma harud üles. git push -u origin <sinu-haru-nimi> . See peaks minema ilma probleemideta.
-    8.	Mõlemad tudengid muudavad failis conflict.md täpselt sama rida, aga erineval viisil ning teevad commiti ja pushi.
-    9.	Tudeng üks läheb lokaalselt main branchile git checkout master ning paneb enda haru main harru (merge) git merge <sinu-haru-nimi> ( + push)
-    10.	Nüüd proovib tudeng nr 2 teha sama.
-</p>
-</div>
-<div class = "s1">
-<img src="toit.jpg" border = 5px solid #556 width="500px" height="500" align = "left">
-
-</div>
+        <p>Selle söögiga siin on nii, et see on herge, lihtne ja mitsev. Kui sa hästi
+        kokata ei oska, siis esimeseks käe harjutamiseks küpsetamises on hea lahendus. Lisaks, saad 
+        valmistatavat kogust lihtsalt muuta. Saad tunda ennast kui Gordon Ramsay. 
+        </p>
+    </div>
+    <div class = "tekst_box_1" style="grid-column-start: 1;grid-row-start: 3;">
+        <h2 class="väike_pealkiri">Valmistamise juhised</h2>
+        <p><span class="väike_pealkiri">1.</span>Lisa tassi jahu, suhkur, kakaopulber, küpsetuspulber ja sool.
+        sega põhjalikult, kuni on tekkinud ühtlane pruunikas pulber.</p>
+        <p><span class="väike_pealkiri">2.</span>Lisa tassi piip, soovi korral vanilli ekstraks ja omal valikul kas õli või sulatatud või.
+        Sega, kuni ei ole näga kuivainete klompe ja tainas on homogeenne. 
+        Lisa soovi korral šokolaadi tükid või mõned muud meelepärased lisad, näiteks pähklid. </p>
+        <p><span class="väike_pealkiri">3.</span>Küpseta koos tassiga mikrolaineahjus 1 minut. 
+        Pärast küpsemist, lase tassil hetke jahtuda, võta kõrvale külm tass piima ja lase hea maitsta.</p>
+    </div>
+    <div>
+        <img src="cupcake2.jpg" style="grid-column-start: 3;object-fit: cover; width: 600px;">
+    </div>
+    <div style="grid-column-start: 1; grid-column-end: span 3;grid-row-start: 4;grid-row-end: span 2;">
+        <h2 class="väike.pealkiri">Vaata ka videot</h2>
+        <iframe width=100% height=100% src="https://www.youtube.com/embed/4TksxjQjvkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
