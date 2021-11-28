@@ -21,10 +21,10 @@ div{
 .main_konteiner {
   margin: 10px;
   background-color:rgba(255, 255, 240, 0.76);
-  border-radius: 25px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 190px 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 190px 1fr 1fr 1fr 1fr 40px;
   gap: 20px;
   padding: 60px;
   box-sizing: border-box;
@@ -49,11 +49,11 @@ div{
 }
 .retsepi_float { 
   background-color:rgb(82, 74, 74);
-  font-size: 14px;
+  font-size: 10px;
   float: left;
   font-family: 'Montserrat', sans-serif;
   padding: 3%;
-  border-radius: 25px;
+  border-radius: 10px;
   width: 350px;
   color: ivory;
   margin-top: 10px;
