@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Viies retsept</title>
+    <link rel="stylesheet" type="text/css" title="Cool stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap" rel="stylesheet">
+<style>
+body {
+    background-image: url("ramen1.jpg");
+    background-repeat: repeat;
+    background-attachment:fixed;
+    background-size: 100%;
+    margin: 0 auto;
+    }
+    .logo {
+        float: left;
+        border-radius: 20px;
+        height: 70px;
+        width: 70px;
+    }
+    .main_konteiner {
+        grid-template-rows: 190px 1fr 1fr 1fr 1fr 40px;
+    }
+</style>
+</head>
+<body>
+<div class="kastikesed" style="height: 60px;">
+    <h1 style="justify-content: left;">Tudengiretseptid</h1>
+    <form style="display: inline" action ="avaleht.html" method="get" ><button style="position: absolute; top: 5px;right: 30px;" >PEALEHELE</button>
+    </form>
+</div>
+<div> 
+    <h1 style="font-size: 50px;font-style: italic; padding: 5%;"> Nuudliroog </h1>
+</div>
+<div class="main_konteiner">
+    <div class="retsepi_float" style="margin-top: 100px;">
+        <h2 class="väike_pealkiri" style = "font-size: 30px; text-align: center;color: rosybrown;">KOOSTISOSAD</h2>
+        <ul>
+            <li class = "tava_tekst" >pakk kiirnuudleid </li>
+            <li class = "tava_tekst">keevat vett</li>
+            <li class = "tava_tekst">külmutatud köögivilja segu</li>
+            <li class = "tava_tekst"> lihalõike</li>
+            <li class = "tava_tekst">keedetud muna</li>
+        </ul>
+    </div>
+    <div class = "konteiner" style="grid-column-start: 2; grid-column-end: span 2;">
+        <div class = "väike_pealkiri" style="font-size: 20px;">Ettevalmistus aeg 
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);">10 min</span>
+        </div>
+        <div class = "väike_pealkiri" style="font-size: 20px;"> Küpsetus aeg 
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);"> 10min</span>
+        </div>
+        <div class = "väike_pealkiri" style="font-size: 20px;">Sobiv kogus
+            <br>
+            <span class="tava_tekst" style="color: rgb(82, 74, 74);">1 - le</span>
+        </div>
+    </div>
+    <div class="tekst_box_1" style="grid-column-start: 2;grid-row-start: 2;" >
+        <h2 class="väike_pealkiri" style="text-align: center;">Kiire ja lihtne</h2>
+
+        <p> Kui pikaks kokkamiseks loengute vahel ei ole aega ja viitsimist, siis lihtne lahendus on kasutada ära juba valmis tehtud toiduained. Kiirnuudlite küpsemine võtab paar minutit, külmutatud köögiviljad on juba valmis ja kui munad ette ära keedad, siis saab selle lihtsalt külmikust välja võtta.
+        <br><br> Kogu tõsiduse juures on tegemist lihtsa toidu edasi arendamisega ja tervislikumaks muutmisega, et vanemate küsimuse peale: " Kas sa ikka sööd korralikult?" saaks ausalt jaatavalt vastata. 
+        <br><br> Kõiki koostisosasid saad kohandada vastavalt sellele, mis parajasti käepärast ja olemas on. Kuid liiga palju asju ei tasu toidule lisada, muidu ei saa enam ise ka aru, mida sööd.
+        <br><br>Kõige paremini sobivad roa juurde praelõigud. Sobivad ja viinerid või lihapallid, kuid tavaline sink ja keeduvorst jäta pigem võileivale panekuks.</p>
+    </div>
+    <div class = "tekst_box_1" style="grid-column-start: 1;grid-row-start: 3;margin-top: 20px;">
+        <h2 class="väike_pealkiri">Valmistamise juhised</h2>
+        <p><span class="väike_pealkiri">1. </span>Keeda vesi, lisa nuudlid. Kui soovid lisa ka külmutatud köögiviljad kohe nuudlitele. Kui soovid, võid need enne pannil praadida ja siis nuudlitele lisada.</p>
+        <p><span class="väike_pealkiri">2. </span>Keeda muna(d). Parim muna on 5min muna, mis on seest natuke vedel.</p>
+        <p><span class="väike_pealkiri">3. </span>Kui nuudlid valmis saavad, lisa nendele köögiviljad, kui esimese sammus neid kohe ei lisanud. Lisa meelepärased praelõigud ja muna.</p>
+    </div>
+    <div>
+        <img src="ramen2.jpg" alt = "ramen2" style="object-fit: cover; width: 425px;max-height: 400px;margin-top: 60px;">
+    </div>
+    <div style="grid-column-start: 1; grid-column-end: span 3;grid-row-start: 4; grid-row-end: span 2;">
+        <h2 class="väike_pealkiri">Vaata ka teisi võimalusi, kuidas oma nuudlid uhkemaks teha</h2>
+        <iframe style = "border: 2px; color: slategray;" width="1500" height="750" src="https://www.youtube.com/embed/wdNdxixXIrY" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</body>
+</html>
