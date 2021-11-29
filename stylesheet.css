@@ -74,6 +74,7 @@ div{
   padding: 5px;
   font-size: 20px;
   grid-column-end: span 2;
+  color: rgb(82, 74, 74);
 }
 .väike_pealkiri {
   font-size: 30px;
