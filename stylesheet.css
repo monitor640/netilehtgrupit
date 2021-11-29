@@ -94,8 +94,16 @@ html{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+button {
+  height: 50px;
+  width: 250px;
+  padding: 5px;
+  font-size: 20px;
+  color: rosybrown;
+  background-color:rgba(82, 74, 74, 1);
+  border-radius: 12px;
+  }
 img{
   margin: 10px;
   margin-top: 12px;
