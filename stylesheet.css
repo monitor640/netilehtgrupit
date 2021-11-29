@@ -2,7 +2,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ivory;
+
 
 }
 body{
@@ -17,6 +17,7 @@ div{
   border-radius: 8px;
   color:aliceblue;
   margin:10px;
+  position: relative;
 }
 .main_konteiner {
   margin: 10px;
@@ -83,6 +84,7 @@ div{
 html{
   font-family: 'Montserrat', sans-serif;
   height: 100%;
+  color: ivory
 }
 .parallax{
   background-image: url("background.jpeg");
@@ -100,4 +102,11 @@ img{
   object-fit: cover;
   max-height: 300px;
   max-width: auto;
+}
+.outer{
+  position: relative;
+}
+.Retseptipealkiri{
+    position: absolute; top: 10px;
+    font-size: 45px;
 }
